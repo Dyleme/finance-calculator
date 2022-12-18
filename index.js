@@ -96,6 +96,8 @@ function doGlobalOperation() {
     } catch (e) {
         result.textContent = e.message;
         console.log(e);
+    } finally {
+        result.classList.remove('opacity-0');
     }
 }
 
