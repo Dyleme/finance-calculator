@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="./styles.css">
+        <link href="https://fonts.cdnfonts.com/css/luminari" rel="stylesheet">
+    </head>
+
+    <body class="body">
+        <main class="main">
+            <div class="form-holder">
+                <form class="calculator-form" id="calculator">
+                    <div class="w-100">
+                        <select name="rounding" id="rounding"
+                            class="form-operation rounding">
+                            <option value="4">Без округления</option>
+                            <option value="1">Математическое</option>
+                            <option value="2">Бухгалтерское</option>
+                            <option value="3">Усечение</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="text" name="number" id="number1"
+                            placeholder="Введите число..." value="0">
+                        <select name="operation" id="operation1"
+                            class="form-operation">
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                            <option value="*">*</option>
+                            <option value="/">/</option>
+                        </select>
+                        <input type="text" name="number" id="number2"
+                            placeholder="Введите число..." value="0" class="input-priority">
+                        <select name="operation" id="operation2"
+                            class="form-operation">
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                            <option value="*">*</option>
+                            <option value="/">/</option>
+                        </select>
+                        <input type="text" name="number" id="number3"
+                            placeholder="Введите число..." value="0" class="input-priority">
+                        <select name="operation" id="operation3"
+                            class="form-operation">
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                            <option value="*">*</option>
+                            <option value="/">/</option>
+                        </select>
+                        <input type="text" name="number" id="number4"
+                            placeholder="Введите число..." value="0">
+                    </div>
+                </form>
+                <button class="b-equals" id="b-equal">=</button>
+                <span class="form-result opacity-0" id="form-result">
+                    Результат
+                </span>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <span>4 курс ФПМИ, 4 группа</span>
+            <span>Дявго Алексей</span>
+        </footer>
+    </body>
+    <script src="./bundle.js"></script>
+
+</html>
